@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Polaris Bakery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Roboto+Slab:wght@700;800&family=Young+Serif&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script defer src="app.js"></script>
+    <script defer src="parallax.js"></script>
+  </head>
+  <body>
+    <div class="container background-color">
+      <nav class="navbar">
+        <!-- Logo -->
+        <div class="mobile-wrapper">
+          <a class="logo-wrapper" href="#landing">
+            <b>POLARIS</b>
+          </a>
+          <!-- Mobile navigation -->
+          <input type="checkbox" id="nav-check">
+          <label for="nav-check" class="nav-mobile-button">
+            <svg class="nav-stack" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 14h20v4h-20v-4zM6 26h20v-4h-20v4zM6 6v4h20v-4h-20z"></path>
+            </svg>
+          </label>
+        </div>
+        <!-- Desktop navigation -->
+        <div class="nav-links-parent">
+          <a class="nav-button" href="#menu-section">
+            <b class="nav-text">Menu</b>
+          </a>
+          <a class="nav-button" href="#specials-section">
+            <b class="nav-text">Specials</b>
+          </a>
+          <a class="nav-button" href="#location-section">
+            <b class="nav-text">Location</b>
+          </a>
+          <a class="nav-button" href="#about-section">
+            <b class="nav-text">About</b>
+          </a>
+        </div>
+      </nav>
+      <div id="landing" class="content-sections">
+        <div class="background-city">
+          <img class="cloud-right-small svg-graphic-background-night" alt="" src="./images/cloud-right-small-night.svg" />
+          <img class="cloud-right-small svg-graphic-background-day" alt="" src="./images/cloud-right-small.svg" />
+          <img class="cloud-left-small svg-graphic-background-night" alt="" src="./images/cloud-left-small-night.svg" />
+          <img class="cloud-left-small svg-graphic-background-day" alt="" src="./images/cloud-left-small.svg" />
+          <img class="cloud-left-large svg-graphic-background-night" alt="" src="./images/cloud-left-large-night.svg" />
+          <img class="cloud-left-large svg-graphic-background-day" alt="" src="./images/cloud-left-large.svg" />
+          <img class="cloud-right-large svg-graphic-background-night" alt="" src="./images/cloud-right-large-night.svg" />
+          <img class="cloud-right-large svg-graphic-background-day" alt="" src="./images/cloud-right-large.svg" />
+          <img class="cloud-top-small svg-graphic-background-night" alt="" src="./images/cloud-top-small-night.svg" />
+          <img class="cloud-top-small svg-graphic-background-day" alt="" src="./images/cloud-top-small.svg" />
+          <img class="cloud-top-large svg-graphic-background-night" alt="" src="./images/cloud-top-large-night.svg" />
+          <img class="cloud-top-large svg-graphic-background-day" alt="" src="./images/cloud-top-large.svg" />
+          <img class="cityscape svg-graphic-background-day" alt="" src="./images/background-city.svg" />
+          <img class="cityscape svg-graphic-background-night" alt="" src="./images/background-city-night.svg" />
+        </div>
+        <div id="landing-section" class="landing-section">
+          <div class="coffee-text-container">
+            <div class="discover-a-universe-container">
+              <p class="margin0">Discover</p>
+              <p class="margin0">a universe</p>
+            </div>
+            <img
+                    id="polaris-coffee-icon"
+                    class="polaris-coffee-icon hidden translate-right"
+                    alt=""
+                    src="images/polaris-coffee-1.svg"
+            />
+          </div>
+          <div class="croissant-text-container">
+            <img
+                    id="polaris-croissant-icon"
+                    class="polaris-croissant-icon hidden translate-left"
+                    alt=""
+                    src="images/polaris-croissant-1.svg"
+            />
+            <div class="of-delicious-treats-container">
+              <p class="margin0">of delicious</p>
+              <p class="margin0">treats</p>
+            </div>
+          </div>
+        </div>
+        <div id="menu-section" class="menu-section">
+          <div class="menu-grid-row">
+            <div class="title-visuals">
+              <div class="menu-items-title">Menu Items</div>
+              <b class="all-time-favorites">All-time favorites, all the time.</b>
+              <img class="horizontal-stars" alt="" src="images/horizontal-stars.svg" />
+            </div>
+            <div class="item-large hidden translate-right">
+              <div>
+                <div class="item-name-tag">
+                  <b class="item-name">Polaris Pecan Sourdough</b>
+                  <div class="price-tag">$16.00</div>
+                </div>
+                <img
+                  class="item-large-image"
+                  alt=""
+                  src="images/sourdough-pecan-hover.jpg"
+                />
+
+
+              </div>
+              <div class="hover-state">
+                <img
+                  class="item-large-image"
+                  alt=""
+                  src="images/sourdough-pecan-default.jpg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="menu-grid-row">
+            <div class="item-small hidden translate-right">
+              <div>
+                <img
+                  class="item-small-image"
+                  alt=""
+                  src="images/sourdough-hover.jpg"
+                />
+
+                <div class="item-name-tag">
+                  <b class="item-name">Polaris Sourdough</b>
+                  <div class="price-tag">$14.00</div>
+                </div>
+              </div>
+              <div class="hover-state">
+                <img
+                  class="item-small-image"
+                  alt=""
+                  src="images/sourdough-default.jpg"
+                />
+              </div>
+            </div>
+            <div class="item-small hidden translate-right">
+              <div>
+                <img
+                  class="item-small-image"
+                  alt=""
+                  src="images/baguette-hover.jpg"
+                />
+
+                <div class="item-name-tag">
+                  <b class="item-name">Baguette</b>
+                  <div class="price-tag">$7.50</div>
+                </div>
+              </div>
+              <div class="hover-state">
+                <img
+                  class="item-small-image"
+                  alt=""
+                  src="images/baguette-default.jpg"
+                />
+              </div>
+            </div>
+            <div class="item-small hidden translate-right">
+              <div>
+                <img
+                  class="item-small-image"
+                  alt=""
+                  src="images/babka-hover.jpg"
+                />
+
+                <div class="item-name-tag">
+                  <b class="item-name">Poppy Seed Babka </b>
+                  <div class="price-tag">$15.00</div>
+                </div>
+              </div>
+              <div class="hover-state">
+                <img
+                  class="item-small-image"
+                  alt=""
+                  src="images/babka-default.jpg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="menu-grid-row">
+            <div class="item-large hidden translate-right">
+              <div>
+                <img
+                  class="item-large-image"
+                  alt=""
+                  src="images/blueberry-pie-hover.jpg"
+                />
+
+                <div class="item-name-tag">
+                  <b class="item-name">Honey Blueberry Pie</b>
+                  <div class="price-tag">$28.00</div>
+                </div>
+              </div>
+              <div class="hover-state">
+                <img
+                  class="item-large-image"
+                  alt=""
+                  src="images/blueberry-pie-default.jpg"
+                />
+              </div>
+            </div>
+            <div class="item-large hidden translate-right">
+              <div>
+                <img
+                  class="item-large-image"
+                  alt=""
+                  src="images/cherry-pie-hover.jpg"
+                />
+
+                <div class="item-name-tag">
+                  <b class="item-name">Starry Cherry Pie</b>
+                  <div class="price-tag">$30.00</div>
+                </div>
+              </div>
+              <div class="hover-state">
+                <img
+                  class="item-large-image"
+                  alt=""
+                  src="images/cherry-pie-default.jpg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="menu-grid-row">
+            <div class="item-small hidden translate-right">
+              <div>
+                <img
+                  class="item-small-image"
+                  alt=""
+                  src="images/croissant-hover.jpg"
+                />
+
+                <div class="item-name-tag">
+                  <b class="item-name">Croissant</b>
+                  <div class="price-tag">$7.50</div>
+                </div>
+              </div>
+              <div class="hover-state">
+                <img
+                  class="item-small-image"
+                  alt=""
+                  src="images/croissant-default.jpg"
+                />
+              </div>
+            </div>
+            <div class="item-small hidden translate-right">
+              <div>
+                <img
+                  class="item-small-image"
+                  alt=""
+                  src="images/latte-hover.jpg"
+                />
+
+                <div class="item-name-tag">
+                  <b class="item-name">Latte</b>
+                  <div class="price-tag">$5.00</div>
+                </div>
+              </div>
+              <div class="hover-state">
+                <img
+                  class="item-small-image"
+                  alt=""
+                  src="images/latte-default.jpg"
+                />
+              </div>
+            </div>
+            <div class="item-small hidden translate-right">
+              <div>
+                <img
+                  class="item-small-image"
+                  alt=""
+                  src="images/tea-hover.jpg"
+                />
+
+                <div class="item-name-tag">
+                  <b class="item-name">Jasmine Tea</b>
+                  <div class="price-tag">$3.50</div>
+                </div>
+              </div>
+              <div class="hover-state">
+                <img
+                  class="item-small-image"
+                  alt=""
+                  src="images/tea-default.jpg"
+                />
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div id="specials-section" class="specials-section">
+          <div class="specials-row">
+            <div class="weekly-banner-wrapper">
+
+              <div class="weekly-banner">
+                <p class="weekly-menu-title">Weekly Menu</p>
+                <p class="weekly-menu-title">Specials</p>
+                <b class="specials-tagline">Each day a unique treat awaits!</b>
+              </div>
+            </div>
+            <div class="specials-card hidden translate-left">
+                <div class="specials-background-color"></div>
+                <div class="specials-text-container">
+                  <p class="day-of-the-week">
+                    <b>Monday</b>
+                  </p>
+                  <p class="specials-description-text">Sunny Fruit Tart</p>
+                  <p class="specials-description-text">$25.00</p>
+                </div>
+                <div class="specials-image-card">
+                  <img
+                          class="specials-image-child"
+                          alt=""
+                          src="./images/fruit-tart-hover.jpg"
+                  />
+                </div>
+                <div class="specials-image-card  hover-state">
+                  <img
+                          class="specials-image-child"
+                          alt=""
+                          src="./images/fruit-tart-default.jpg"
+                  />
+                </div>
+            </div>
+            <div class="specials-card hidden translate-left">
+              <div class="specials-background-color"></div>
+              <div class="specials-text-container">
+                <p class="day-of-the-week">
+                  <b>Tuesday</b>
+                </p>
+                <p class="specials-description-text">Flower Bouquet Cookies</p>
+                <p class="specials-description-text">
+                  $5.00 for one | $25.00 for box of 6
+                </p>
+              </div>
+              <div class="specials-image-card">
+                <img
+                        class="specials-image-child"
+                        alt=""
+                        src="./images/bouquet-cookies-hover.jpg"
+                />
+              </div>
+              <div class="specials-image-card hover-state">
+                <img
+                        class="specials-image-child"
+                        alt=""
+                        src="./images/bouquet-cookies-default.jpg"
+                />
+              </div>
+            </div>
+            <div class="specials-card hidden translate-left">
+              <div class="specials-background-color"></div>
+              <div class="specials-text-container">
+                <p class="day-of-the-week">
+                  <b>Wednesday</b>
+                </p>
+                <p class="specials-description-text">Blue Rose Cupcakes</p>
+                <p class="specials-description-text">$4.50 for one | $22.50 for box of 6</p>
+              </div>
+              <div class="specials-image-card">
+                <img
+                        class="specials-image-child"
+                        alt=""
+                        src="./images/rose-cupcakes-hover.jpg"
+                />
+              </div>
+              <div class="specials-image-card hover-state">
+                <img
+                        class="specials-image-child"
+                        alt=""
+                        src="./images/rose-cupcakes-default.jpg"
+                />
+              </div>
+            </div>
+            <div class="specials-card hidden translate-left">
+              <div class="specials-background-color"></div>
+              <div class="specials-text-container">
+                <p class="day-of-the-week">
+                  <b>Thursday</b>
+                </p>
+                <p class="specials-description-text">Space Splatter Cookies</p>
+                <p class="specials-description-text">$5.00 for one | $25.00 for box of 5</p>
+              </div>
+              <div class="specials-image-card">
+                <img
+                        class="specials-image-child"
+                        alt=""
+                        src="./images/space-cookies-hover.jpg"
+                />
+              </div>
+              <div class="specials-image-card hover-state">
+                <img
+                        class="specials-image-child"
+                        alt=""
+                        src="./images/space-cookies-default.jpg"
+                />
+              </div>
+            </div>
+            <div class="specials-card hidden translate-left">
+              <div class="specials-background-color"></div>
+              <div class="specials-text-container">
+                <p class="day-of-the-week">
+                  <b>Friday</b>
+                </p>
+                <p class="specials-description-text">Assorted Colors Macarons</p>
+                <p class="specials-description-text">$3.00 for one | $15.00 for box of 6</p>
+              </div>
+              <div class="specials-image-card">
+                <img
+                        class="specials-image-child"
+                        alt=""
+                        src="./images/macarons-hover.jpg"
+                />
+              </div>
+              <div class="specials-image-card hover-state">
+                <img
+                        class="specials-image-child"
+                        alt=""
+                        src="./images/macarons-default.jpg"
+                />
+              </div>
+            </div>
+            <div class="specials-card hidden translate-left">
+              <div class="specials-background-color"></div>
+              <div class="specials-text-container">
+                <p class="day-of-the-week">
+                  <b>Saturday</b>
+                </p>
+                <p class="specials-description-text">Star Sugar Cookies</p>
+                <p class="specials-description-text">$5.00 for one | $25.00 for box of 5</p>
+              </div>
+              <div class="specials-image-card">
+                <img
+                        class="specials-image-child"
+                        alt=""
+                        src="./images/sugar-cookies-hover.jpg"
+                />
+              </div>
+              <div class="specials-image-card hover-state">
+                <img
+                        class="specials-image-child"
+                        alt=""
+                        src="./images/sugar-cookies-default.jpg"
+                />
+              </div>
+            </div>
+            <div class="specials-card hidden translate-left">
+              <div class="specials-background-color"></div>
+              <div class="specials-text-container">
+                <p class="day-of-the-week">
+                  <b>Sunday</b>
+                </p>
+                <p class="specials-description-text">Chocolate Brownie</p>
+                <p class="specials-description-text">$6.00 for one | $48.00 for box of 9</p>
+              </div>
+              <div class="specials-image-card">
+                <img
+                        class="specials-image-child"
+                        alt=""
+                        src="./images/brownie-hover.jpg"
+                />
+              </div>
+              <div class="specials-image-card hover-state">
+                <img
+                        class="specials-image-child"
+                        alt=""
+                        src="./images/brownie-default.jpg"
+                />
+              </div>
+            </div>
+            <img
+                    id="polaris-cookies-icon"
+                    class="polaris-cookies-icon hidden translate-right"
+                    alt=""
+                    src="./images/polaris-cookies-1.svg"
+            />
+          </div>
+        </div>
+        <div id="location-section" class="location-section">
+          <div class="crescent-avenue-105-container">
+            <div class="visit-us">Visit Us</div>
+            <p class="address margin0 hidden translate-left">42 Crescent Avenue #105 Willowbrook, Veles 163128</p>
+            <div class="location-text-wrapper hidden translate-left">
+              <b class="hours-of-operation">Hours of Operation</b>
+              <ul class="margin0">
+                <li>
+                  <span>M-F 8:00 am - 1:00 pm</span>
+                </li>
+                <li>
+                  <span>Sat 8:00 am - 2:00 pm</span>
+                </li>
+                <li>
+                  <span>Sun 9:00 am - 2:00 pm</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <img class="map-icon hidden translate-right" alt="" src="images/map-veles.jpg" />
+        </div>
+        <div id="about-section" class="about-section">
+          <div class="about-section-title">Crafting Fresh Delights</div>
+          <div class="image-banner-wrapper hidden">
+            <img class="image-banner  hover-state" alt="" src="images/crafting-bakery-kneading.jpg" />
+            <img class="image-banner" alt="" src="images/crafting-bakery-overview.jpg" />
+          </div>
+          <div class="discover-magical-flavors-container">
+            <p class="about-paragraph hidden translate-left">
+              Discover magical flavors of Polaris Bakery, where our passion
+              for baking knows no bounds. We handcraft our pastries and breads
+              using locally sourced, seasonal ingredients, elevating every
+              bite to an otherworldly experience.
+            </p>
+            <p class="about-paragraph hidden translate-left">
+              It started by sharing cookies with friends and neighbors next
+              door. Now, we’re crafting baked goods for all of Willowbrook.
+              Driven by passion and possibility, we founded Polaris Bakery as
+              a love letter to the magic and art of baking. We love creating
+              treats for our community, and we believe that every bite of our
+              confections will transport you to a world of wonder and delight.
+            </p>
+          </div>
+        </div>
+        <div class="background-space">
+          <img class="polaris-building" alt="" src="./images/polaris-building.svg">
+        </div>
+      </div>
+      <div class="footer">
+        <img
+                class="polaris-logo"
+                alt=""
+                src="images/polaris-logo.svg"
+        />
+        <div class="contact-us-section">
+          <b class="margin0">Contact Us</b>
+          <p class="margin0">(628) 555-8882</p>
+          <p class="margin0">polarisbakery@mail.com</p>
+          <div onclick="enableCreditsOverlay()" class="credits-link">Credits</div>
+        </div>
+        <div onclick="disableCreditsOverlay()" id="credits-overlay">
+          <div class="desktop-credits">
+            <div>
+              <b class="disclaimer">This place is entirely fictional. Any resemblance to actual places or people is entirely coincidental.</b>
+              <b>Photo Credits</b>
+              <ul>
+                <li>All following images are from <a href="https://www.pexels.com/">Pexels</a></li>
+                <li>Pecan Sourdough by Cats Coming</li>
+                <li>Sourdough by Marta Dzedyshko</li>
+                <li>Baguette by Mariana Kurnyk and Antoni Shkraba</li>
+                <li>Poppy Seed Babka by Polina Tankilevitch</li>
+                <li>Honey Blueberry Pie by 陈 欣茹</li>
+                <li>Starty Cherry Pie by Mister Mister</li>
+                <li>Croissant by Mariana Kurnyk</li>
+                <li>Latte by Chevanon Photography</li>
+                <li>Jasmine Tea by Julia Filirovska</li>
+                <li>Sunny Fruit Tart by Regina Ferraz</li>
+                <li>Flower Bouquet Cookies by Paola Vasquez</li>
+                <li>Blue Rose Cupcakes by Darkele Alderson</li>
+                <li>Space Splatter Cookies by Darlene Alderson</li>
+                <li>Macarons by Jill Wellington</li>
+                <li>Star Sugar Cookies by Ekaterina Bolovtsova</li>
+                <li>Chocolate Brownie by Karolina Grabowska</li>
+                <li>Kneading Dough by Skyler Ewing</li>
+                <li>Bakery with Bread by Kasia Palitava</li>
+              </ul>
+            </div>
+            <div>
+              <b>SVG Credits</b>
+              <ul>
+                <li>Background City - Designed by upklyak on Freepik</li>
+                <li>Bakery Store - Designed by Graphiqastock on Freepik</li>
+                <li>City Map - Procedurally generated using app by <a href="https://probabletrain.itch.io/city-generator">ProbableTrain</a></li>
+              </ul>
+              <b>Code Credits</b>
+              <ul>
+                <li>Frame-by-Frame Aanimation Code by <a href="https://www.youtube.com/watch?v=hzIPT9IvWJE">The Art of Coding</a></li>
+                <li>Base Scroll Animation Code by <a href="https://www.youtube.com/watch?v=T33NN_pPeNI">Fireship</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mobile-warning">
+            Please read credits on Desktop.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
